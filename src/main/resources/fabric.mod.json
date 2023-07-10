@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "beckys-mod-10-07-23",
+	"version": "${version}",
+	"name": "Becky's Mod 10-07-23",
+	"description": "This is a fun difficult mod!",
+	"authors": [
+		"Becky!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/beckys-mod-10-07-23/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.becky.mod100723.Mod100723"
+		],
+		"client": [
+			"net.becky.mod100723.Mod100723Client"
+		],
+		"fabric-datagen": [
+			"net.becky.mod100723.Mod100723DataGenerator"
+		]
+	},
+	"mixins": [
+		"beckys-mod-10-07-23.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
